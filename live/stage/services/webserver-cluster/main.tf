@@ -11,7 +11,7 @@ module "webserver_cluster" {
 
   cluster_name           = "tf-webservers-stage"
   db_remote_state_bucket = "tf-state-eu-west-2-rnbv"
-  db_remote_state_key    = "stage/data-stores/mysql/terraform.tfstate"
+  db_remote_state_key    = "stage/services/webserver-cluster/terraform.tfstate"
 
   instance_type = "t2.micro"
   min_size      = 2
