@@ -7,7 +7,7 @@ provider "aws" {
 }
 
 module "webserver_cluster" {
-  source = "../../../modules/services/webserver-cluster"
+  source = "github.com/baranovRP/tf-aws-rnbv-modules//modules/services/webserver-cluster?ref=v0.0.1"
 
   cluster_name           = "tf-webservers-stage"
   db_remote_state_bucket = "tf-state-eu-west-2-rnbv"
